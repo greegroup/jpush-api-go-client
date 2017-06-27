@@ -15,12 +15,23 @@ type AndroidNotice struct {
 }
 
 type IOSNotice struct {
-	Alert            string                 `json:"alert"`
+	Alert            IOSAlert                 `json:"alert"`
 	Sound            string                 `json:"sound,omitempty"`
 	Badge            int                    `json:"badge,omitempty"`
 	ContentAvailable bool                   `json:"content-available,omitempty"`
 	Category         string                 `json:"category,omitempty"`
 	Extras           map[string]interface{} `json:"extras,omitempty"`
+}
+
+type IOSAlert struct {
+	Title        string `json:"title"`
+	Body         string `json:"body"`
+	TitleLocKey  string `json:"title_loc_key,omitempty"`
+	TitleLocArgs []string `json:"title_loc_args,omitempty"`
+	ActionLocKey string `json:"action_loc_key,omitempty"`
+	LocKey       string `json:"loc_key"`
+	LocArgs      []string `json:"loc_args"`
+	LaunchImage  string `json:"launch_image"`
 }
 
 type WinPhoneNotice struct {
