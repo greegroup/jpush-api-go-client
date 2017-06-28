@@ -1,5 +1,7 @@
-jpush-api-go-client
-===================
+jpusher
+=================== 
+
+> forked from ylywyn/jpush-api-go-client
 
 概述
 ----------------------------------- 
@@ -9,7 +11,7 @@ jpush-api-go-client
 
 使用  
 ----------------------------------- 
-   go get github.com/ylywyn/jpush-api-go-client
+   go get github.com/greegroup/jpusher
    
    
 推送流程  
