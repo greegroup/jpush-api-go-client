@@ -24,14 +24,14 @@ type IOSNotice struct {
 }
 
 type IOSAlert struct {
-	Title        string `json:"title"`
+	Title        string `json:"title,omitempty"`
 	Body         string `json:"body"`
 	TitleLocKey  string `json:"title_loc_key,omitempty"`
 	TitleLocArgs []string `json:"title_loc_args,omitempty"`
 	ActionLocKey string `json:"action_loc_key,omitempty"`
 	LocKey       string `json:"loc_key"`
 	LocArgs      []string `json:"loc_args"`
-	LaunchImage  string `json:"launch_image"`
+	LaunchImage  string `json:"launch_image,omitempty"`
 }
 
 type WinPhoneNotice struct {
