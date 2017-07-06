@@ -15,7 +15,7 @@ type AndroidNotice struct {
 }
 
 type IOSNotice struct {
-	Alert            IOSAlert                 `json:"alert"`
+	Alert            IOSAlert               `json:"alert"`
 	Sound            string                 `json:"sound,omitempty"`
 	Badge            int                    `json:"badge,omitempty"`
 	ContentAvailable bool                   `json:"content-available,omitempty"`
@@ -24,14 +24,14 @@ type IOSNotice struct {
 }
 
 type IOSAlert struct {
-	Title        string `json:"title,omitempty"`
-	Body         string `json:"body"`
-	TitleLocKey  string `json:"title_loc_key,omitempty"`
-	TitleLocArgs []string `json:"title_loc_args,omitempty"`
-	ActionLocKey string `json:"action_loc_key,omitempty"`
-	LocKey       string `json:"loc_key"`
-	LocArgs      []string `json:"loc_args"`
-	LaunchImage  string `json:"launch_image,omitempty"`
+	Title        	string 			`json:"title,omitempty"`
+	Body         	string 			`json:"body"`
+	TitleLocKey  	string 			`json:"title-loc-key,omitempty"`
+	TitleLocArgs 	[]string 		`json:"title-loc-args,omitempty"`
+	ActionLocKey 	string 			`json:"action-loc-key,omitempty"`
+	LocKey       	string 			`json:"loc-key"`
+	LocArgs      	[]string 		`json:"loc-args"`
+	LaunchImage  	string 			`json:"launch-image,omitempty"`
 }
 
 type WinPhoneNotice struct {
